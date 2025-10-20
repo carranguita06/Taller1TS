@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<style>
+  h1 {
+    text-align: left;
+    background-color: #0f8593;
+    size: 15px;
+  }
+  h2 {
+    text-align: center;
+  }
+  body {
+            padding: 20px;
+            
+        }
+        .container {
+            max-width: 80px;
+            align-items: left;
+            text-size-adjust: 15px;
+        }
+</style>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagina Series</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"> 
+<body>
+    <div class="container">
+        <h1>TV Series</h1>
+        
+        <table class="table table-striped table-bordered">
+            <thead class="thead-dark">
+                <tr>
+                    <th scope="col">ID</th>
+                    <th scope="col">Name</th>
+                    <th scope="col">Channel</th>
+                    <th scope="col">Seasons</th>
+                </tr>
+            </thead>
+            <tbody id="series-table-body">
+                <!-- Las series se cargarán mediante JavaScript :) -->
+            </tbody>
+        </table>
+    </div>
+    <div>
+        <h2 id="average-seasons"></h2>
+    </div>
+
+    <!-- Scripts en orden -->
+    <script type="module" src="serie.js"></script>
+    <script type="module" src="data.js"></script>
+    <script type="module" src="main.js"></script>
+</body>
+</html>
+
